@@ -170,7 +170,7 @@ INSTALLED_APPS = (
     'robots',
     'django_countries',
     'djcelery',
-    'djkombu',
+    'kombu',
     'followit',
     #'avatar',#experimental use git clone git://github.com/ericflo/django-avatar.git$
 )
@@ -218,7 +218,7 @@ ALLOW_UNICODE_SLUGS = False
 ASKBOT_USE_STACKEXCHANGE_URLS = False #mimic url scheme of stackexchange
 
 #Celery Settings
-BROKER_TRANSPORT = "djkombu.transport.DatabaseTransport"
+BROKER_TRANSPORT = "kombu.transport.django.Transport"
 CELERY_ALWAYS_EAGER = True
 
 import djcelery

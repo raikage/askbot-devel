@@ -23,7 +23,7 @@ import traceback
 from django.contrib.contenttypes.models import ContentType
 from django.template import Context
 from django.utils.translation import ugettext as _
-from celery.decorators import task
+from celery.task import task
 from askbot.conf import settings as askbot_settings
 from askbot import const
 from askbot import mail

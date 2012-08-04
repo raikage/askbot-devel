@@ -231,7 +231,7 @@ def test_celery():
         if broker_transport is None:
             raise AskbotConfigError(
                 "\nPlease add\n"
-                'BROKER_TRANSPORT = "djkombu.transport.DatabaseTransport"\n'
+                'BROKER_TRANSPORT = "kombu.transport.django.Transport"\n'
                 "or other valid value to your settings.py file"
             )
         else:

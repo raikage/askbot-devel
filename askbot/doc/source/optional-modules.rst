@@ -186,7 +186,7 @@ Celery for background jobs
 
 Askbot supports `celery <http://celeryproject.org/>`_ distributed task queue for some task, to enable it follow the following steps:
 
-* Install the following packages: `celery <http://pypi.python.org/pypi/django-celery>`_, `django-celery <http://pypi.python.org/pypi/django-celery>`_,  `django-kombu <http://pypi.python.org/pypi/django-kombu>`_
+* Install the following packages: `celery <http://pypi.python.org/pypi/celery>`_, `django-celery <http://pypi.python.org/pypi/django-celery>`_,  `kombu <http://pypi.python.org/pypi/kombu>`_
 * Set **CELERY_ALWAYS_EAGER** setting value to **False**
 * Run the celery daemon: for this you can use generic init scripts or supervisor, `celery documentation have more information <http://docs.celeryproject.org/en/latest/cookbook/daemonizing.html>`_
 
